@@ -1,5 +1,7 @@
 export enum TempUnit {
+  // eslint-disable-next-line no-unused-vars
   CELCIUS,
+  // eslint-disable-next-line no-unused-vars
   FAHRENHEIT,
 }
 

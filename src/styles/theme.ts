@@ -3,6 +3,7 @@ import lightBg from '../assets/bg.svg'
 import darkBg from '../assets/darkBg.svg'
 
 declare module '@mui/material/styles' {
+  // eslint-disable-next-line no-unused-vars
   interface Theme {
     appTitleColor: string
     backgroundImage: string
@@ -31,6 +32,7 @@ declare module '@mui/material/styles' {
     smallIconTextColor: string
   }
 
+  // eslint-disable-next-line no-unused-vars
   interface ThemeOptions {
     appTitleColor?: string
     backgroundImage?: string
