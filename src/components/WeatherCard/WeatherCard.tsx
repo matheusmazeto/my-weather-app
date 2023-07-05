@@ -38,7 +38,7 @@ import { changeTempUnit } from '../../store/slices/appReducer'
 
 import { lightTheme } from '../../styles/theme'
 import { GetServerSideProps } from 'next'
-import { getWeatherData } from '@/services/weatherApi'
+import { getWeatherData } from '../../services/weatherApi'
 
 interface WeatherCardProps {
   weatherData: CurrentWeather

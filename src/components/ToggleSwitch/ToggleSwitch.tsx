@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { lightTheme } from '@/styles/theme'
+import { lightTheme } from '../../styles/theme'
 import { Slider, Switch } from './styles'
 
 interface IToggleSwitchProps {
