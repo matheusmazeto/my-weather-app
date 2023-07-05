@@ -18,7 +18,7 @@ test('SearchBar', () => {
     )
 
     // Get the input element and change its value
-    const inputElement = getByPlaceholderText('Digite uma cidade')
+    const inputElement = getByPlaceholderText('Search a city')
     fireEvent.change(inputElement, { target: { value: 'London' } })
 
     // Get the button element and click it

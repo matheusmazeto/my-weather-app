@@ -51,7 +51,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
         </InputAdornment>
         <SearchInput
           theme={lightTheme}
-          placeholder="Digite uma cidade"
+          placeholder="Search a city"
           value={city}
           onChange={(e: ChangeEvent<HTMLInputElement>) =>
             dispatch(setCity(e.target.value))

@@ -21,7 +21,7 @@ const FavoriteCities: React.FC<{
     >
       <FavoritesCitiesContainer theme={lightTheme}>
         <SectionTitle data-testid="section-title" theme={lightTheme}>
-          Cidades Favoritas
+          Favorite Cities
         </SectionTitle>
         {favoritesCities.map((favorite: City) => (
           <FavoriteCity

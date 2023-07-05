@@ -28,7 +28,7 @@ test('WeatherCard', () => {
       </Provider>,
     )
 
-    expect(getByText('Clima Atual')).toBeInTheDocument()
+    expect(getByText('Current weather')).toBeInTheDocument()
     expect(getByText('London')).toBeInTheDocument()
     expect(getByText('Cloudy')).toBeInTheDocument()
     const feelsLikeElement = getByTestId('feels-like')

@@ -34,7 +34,7 @@ const SearchHistory: React.FC<SearchHistoryProps> = ({ history, onSearch }) => {
       theme={lightTheme}
     >
       <SectionTitle data-testid="section-history-title" theme={lightTheme}>
-        Histórico de Cidades Pesquisadas
+        History of Researched Cities
       </SectionTitle>
       <AnimatePresence>
         {history.map((city) => {
@@ -75,7 +75,7 @@ const SearchHistory: React.FC<SearchHistoryProps> = ({ history, onSearch }) => {
                     sx={{ mr: 1 }}
                     data-testid="search-history-item"
                   >
-                    Exibir
+                    Select
                   </Button>
                   <Button
                     variant="outlined"

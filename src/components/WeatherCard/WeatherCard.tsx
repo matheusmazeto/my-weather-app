@@ -89,7 +89,7 @@ const WeatherCard: React.FC<WeatherCardProps> = ({ weatherData }) => {
             alignItems: 'center',
           }}
         >
-          <SectionTitle theme={lightTheme}>Clima Atual</SectionTitle>
+          <SectionTitle theme={lightTheme}>Current weather</SectionTitle>
           <div>
             <DateTime theme={lightTheme}>{dateTime}</DateTime>
           </div>

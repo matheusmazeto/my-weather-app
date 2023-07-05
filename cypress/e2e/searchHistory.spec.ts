@@ -7,7 +7,7 @@ describe('SearchHistory Component', () => {
   it('should display the search history section title', () => {
     cy.get('[data-testid="section-history-title"]')
       .should('have.length', 1)
-      .contains('Histórico de Cidades Pesquisadas')
+      .contains('History of Researched Cities')
   })
 
   it('should allow entering a city name in the search input', () => {
@@ -34,14 +34,14 @@ describe('SearchHistory Component', () => {
     )
   })
 
-  it('should trigger the onSearch callback when clicking on the "Exibir" button', () => {
+  it('should trigger the onSearch callback when clicking on the "Select" button', () => {
     const cityName = 'New York'
 
     cy.get('[data-testid="search-input"]').type(cityName)
     cy.get('[data-testid="submit-button"]').click()
     cy.get('[data-testid="search-history-item"]')
       .first()
-      .contains('Exibir')
+      .contains('Select')
       .click()
   })
 

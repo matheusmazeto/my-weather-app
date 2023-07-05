@@ -73,13 +73,13 @@ const Home: React.FC = () => {
                 setWeatherData(currentLocationData)
               } catch (error) {
                 console.error(
-                  'Erro ao obter dados meteorológicos da localização atual:',
+                  'Error getting weather data from current location:',
                   error,
                 )
               }
             },
             (error) => {
-              console.error('Erro ao obter localização:', error)
+              console.error('Error getting location:', error)
             },
           )
         } else {
@@ -87,7 +87,7 @@ const Home: React.FC = () => {
         }
       } catch (error) {
         console.error(
-          'Erro ao obter dados meteorológicos da localização atual:',
+          'Error getting weather data from current location:',
           error,
         )
       }
@@ -119,7 +119,7 @@ const Home: React.FC = () => {
 
       setWeatherData(data)
     } catch (error) {
-      console.error('Erro ao obter dados meteorológicos:', error)
+      console.error('Error getting weather data:', error)
     }
   }
 
@@ -173,8 +173,8 @@ const Home: React.FC = () => {
   return (
     <>
       <Head>
-        <title>Weather Application</title>
-        <meta name="description" content="Weather Application" />
+        <title>My Weather App</title>
+        <meta name="description" content="My Weather App" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="favicon.ico" sizes="any" />
       </Head>
@@ -215,7 +215,7 @@ export const getServerSideProps: GetServerSideProps<HomeProps> = async (
   let favorites: City[] = []
 
   try {
-    // Carregar dados do clima atual da localização atual
+    // Carregar dados do Current weather da localização atual
     if (typeof window !== 'undefined' && navigator.geolocation) {
       const positionPromise = new Promise<Position>((resolve, reject) => {
         navigator.geolocation.getCurrentPosition(resolve, reject)
@@ -232,7 +232,7 @@ export const getServerSideProps: GetServerSideProps<HomeProps> = async (
       } catch (error) {
         if (error instanceof Error) {
           console.error(
-            'Erro ao obter dados meteorológicos da localização atual:',
+            'Error getting weather data from current location:',
             error.message,
           )
         } else {

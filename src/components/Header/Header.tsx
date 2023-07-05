@@ -30,7 +30,7 @@ const Header: React.FC = () => {
         transition={{ duration: 0.5 }}
       >
         <Title data-testid="header-title" theme={lightTheme}>
-          Weather Application
+          My Weather App
         </Title>
       </motion.div>
       <HeaderIconsContainer>

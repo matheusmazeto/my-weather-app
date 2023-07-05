@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react'
 
 const useCurrentDateTime = () => {
-  const formaterDate = new Intl.DateTimeFormat('pt-BR', { dateStyle: 'full' })
-  const formaterTime = new Intl.DateTimeFormat('pt-BR', {
+  const formaterDate = new Intl.DateTimeFormat('en-US', { dateStyle: 'full' })
+  const formaterTime = new Intl.DateTimeFormat('en-US', {
     hour: '2-digit',
     minute: '2-digit',
     hour12: false,
@@ -12,7 +12,7 @@ const useCurrentDateTime = () => {
     const currentDate = new Date()
     const date = formaterDate.format(currentDate)
     const time = formaterTime.format(currentDate)
-    return `${date} | Horário atual: ${time}`
+    return `${date} | Time: ${time}`
   }
 
   const [dateTime, setDateTime] = useState<string>(getCurrentDateTime())

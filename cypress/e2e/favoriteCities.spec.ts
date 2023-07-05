@@ -40,7 +40,7 @@ describe('FavoriteCities', () => {
   it('displays the section title', () => {
     cy.get('[data-testid="section-title"]').should(
       'contain.text',
-      'Cidades Favoritas',
+      'Favorite Cities',
     )
   })
 

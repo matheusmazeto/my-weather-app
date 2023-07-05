@@ -6,7 +6,7 @@ import Header from '../../../src/components/Header/Header'
 test('Header', () => {
   it('renders the title', () => {
     const { getByText } = render(<Header />)
-    const titleElement = getByText('Weather Application')
+    const titleElement = getByText('My Weather App')
     expect(titleElement).toBeInTheDocument()
   })
 })

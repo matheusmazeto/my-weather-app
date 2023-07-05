@@ -8,7 +8,7 @@ describe('Header', () => {
     })
 
     // Add a "data-testid" attribute to the title element in the component
-    cy.get('[data-testid="header-title"]').contains('Weather Application') // Check if the title text is correct
+    cy.get('[data-testid="header-title"]').contains('My Weather App') // Check if the title text is correct
   })
 
   it('navigates to the GitHub repository when the icon is clicked', () => {
