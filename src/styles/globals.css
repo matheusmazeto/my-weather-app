@@ -1,0 +1,21 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  background: url('../assets/bg.svg') no-repeat center 120%, linear-gradient(#FFFFFF 0%, #38C8E6 100%);
+  background-size: auto;
+}
